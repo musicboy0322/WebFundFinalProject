@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 0px;
 }
 
 nav ul li {
@@ -35,4 +36,44 @@ a {
 
 body {
   background-color: wheat;
+}
+
+main {
+  display: flex;
+}
+
+section.left {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 450px;
+  justify-content: space-evenly;
+  padding-left: 150px;
+}
+
+.title {
+  font-size: 40px;
+}
+
+.place {
+  width: 100px;
+  height: fit-content;
+  border-bottom-style: solid;
+  border-color: rgb(202, 149, 95);
+}
+
+section.left a {
+  display: flex;
+  flex-direction: column;
+  border-right-style: none;
+  padding: 0;
+}
+
+section.right {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  height: 450px;
+  background-color: powderblue;
+  margin-top: 100px;
 }
