@@ -1,6 +1,26 @@
 * {
   box-sizing: border-box;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.headerTitle {
+  font-size: 2.5rem;
+  font-weight:bolder;
+  letter-spacing:6px;
+  color: aliceblue;
+  padding-left: 70px;
+  padding-right: 100px;
+  padding-top: 9px;
+}
+
+nav ul li a {
+  height: 80px;
+  color: aliceblue;
+  margin-left: 0px;
+  
 }
 
 nav ul li {
@@ -13,29 +33,21 @@ nav ul {
 
 nav {
   display: flex;
+  background-color: #7a5e8de7;
+  width: 100%;
+  padding: 1rem;
 }
 
 h1 {
   display: flex;
-  padding-top: 30px;
+  padding-top: 15px;
   font-size: 30px;
   padding-left: 80px;
   padding-right: 200px;
 }
 
-a {
-  display: flex;
-  text-decoration: none;
-  border-right-style: dotted;
-  border-color: black;
-  padding-right: 50px;
-  padding-left: 50px;
-  padding-top: 40px;
-  font-size: 20px;
-}
-
 body {
-  background-color: wheat;
+  background-color: rgba(247, 215, 152, 0.979);
 }
 
 main {
@@ -62,11 +74,22 @@ section.left {
   border-color: rgb(202, 149, 95);
 }
 
+a{
+  display: flex;
+  text-decoration: none;
+  border-right-style: dotted;
+  border-color: black;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 30px;
+  font-size: 20px;
+}
+
 section.left a {
   display: flex;
   flex-direction: column;
   border-right-style: none;
-  padding: 0;
+  padding: 15px;
 }
 
 section.right {
