@@ -8,19 +8,26 @@
 
 .headerTitle {
   font-size: 2.5rem;
-  font-weight:bolder;
-  letter-spacing:6px;
+  font-weight: bolder;
+  letter-spacing: 6px;
   color: aliceblue;
   padding-left: 70px;
   padding-right: 100px;
   padding-top: 9px;
 }
 
+nav ul li ul li a {
+  border-style: none;
+}
+
+.list {
+  display: block;
+}
+
 nav ul li a {
   height: 80px;
   color: aliceblue;
   margin-left: 0px;
-  
 }
 
 nav ul li {
@@ -74,7 +81,7 @@ section.left {
   border-color: rgb(202, 149, 95);
 }
 
-a{
+a {
   display: flex;
   text-decoration: none;
   border-right-style: dotted;
