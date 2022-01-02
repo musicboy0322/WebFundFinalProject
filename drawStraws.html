@@ -13,9 +13,44 @@
     <link rel="stylesheet" href="./index.css" />
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="./main.js"></script>
+    <script src="./drawStraws.js"></script>
+    <style>
+        button {
+            margin:30px;
+            width: 90px;
+            height: 40px;
+        }
+        p {
+            font-size: 35px;
+        }
+    </style>
     <title>台灣水果拼盤</title>
   </head>
   <body>
+    <script>
+      $(document).ready(function () {
+        $(".north").click(function () {
+            let number = Math.trunc(Math.random()*4)
+          document.getElementById("fruit").innerHTML = numberNorth[number]
+          document.getElementById("picture").src = srcNorth[number]
+        });
+        $(".west").click(function () {
+            let number = Math.trunc(Math.random()*5)
+          document.getElementById("fruit").innerHTML = numberWest[number]
+          document.getElementById("picture").src = srcWest[number]
+        });
+        $(".south").click(function () {
+            let number = Math.trunc(Math.random()*4)
+          document.getElementById("fruit").innerHTML = numberSouth[number]
+          document.getElementById("picture").src = srcSouth[number]
+        });
+        $(".east").click(function () {
+            let number = Math.trunc(Math.random()*3)
+          document.getElementById("fruit").innerHTML = numberEast[number]
+          document.getElementById("picture").src = srcEast[number]
+        });
+      });
+    </script>
     <nav>
       <h1 class="headerTitle">台灣水果拼盤</h1>
       <ul id="nav">
@@ -84,51 +119,20 @@
         </li>
       </ul>
     </nav>
-    <main>
-      <section class="left">
-        <p style="line-height: 30px">
-          <br />
-          台灣是一個環境優美，人傑地靈而且這裡的水果種類繁多的地方。
-          臺灣一年四季都有水果，釋迦、鳳梨、芒果、文旦、葡萄、香蕉、木瓜等，
-          這些水果名冠全球，不僅好吃，而且便宜，所以寶島台灣還有另一個別稱「水果王國」！
-          <br />
-          台灣有北回歸線經過，熱帶和亞熱帶將這個島一分為二，
-          這裡冬季溫暖，夏季炎熱，陽光充足，這個地方簡直就是水果生長的天堂!
-          <br />
-          台灣奠定「水果王國」的形象，是從日治時代開始。
-          由於氣候及地理條件，台灣生產的熱帶水果對日本來說相當新奇，
-          因此台灣農產以日本市場消費需求為主；
-          同時日本也擴大、加深台灣農產的商品化。
-          當時台灣主要外銷的3項水果為香蕉、鳳梨、柑橘。
-          在喜歡吃水果的人眼裡，台灣大概就長的這麼可愛吧！
-        </p>
-      </section>
-      <section class="right">
-        <img src="picture\fruits_one.jpg" width="500" height="300" />
-        <img src="picture\fruits_three.jpg" width="500" height="300" />
-        <img src="picture\fruits_two.jpeg" width="500" height="300" />
-      </section>
+    <main style="display: block;">
+      <div class="container" style="text-align: center;">
+        <button class="button north">北部</button>
+        <button class="button west">中部</button>
+        <button class="button south">南部</button>
+        <button class="button east">東部</button>
+      </div>
+      <p id="fruit" style="text-align: center;">
+        水果為
+      </p>
+      <div style="text-align: center;">
+        <img src="./picture/問號.png" id="picture" width="600px" height="500px" style="align-self: center;""></img>
+      </div>
+      
     </main>
-    <section class="left">
-      <p style="line-height: 30px">
-        在喜歡吃水果的人眼中的台灣，大概是長這樣子的吧
-      </p>
-    </section>
-    <section class="left">
-      <img src="picture\fruits_seven.jpg" width="300" height="400" />
-    </section>
-    <section class="left">
-      <p style="line-height: 30px">
-        從北到南，由東至西，每個地區都有自己的特色水果哦！<br />
-        品種繁複，種類繁雜，可是多到不會重複呢！<br />
-        現在就讓我們跟著這個台灣水果地圖，一起去發掘自己最愛的水果吧！<br />
-        go！！！
-      </p>
-    </section>
-    <footer>
-      <button style="width: 300px; height: 200px">
-        <a href="./drawStraws.html" style="border-right-style: none">按這</a>
-      </button>
-    </footer>
   </body>
 </html>
