@@ -64,7 +64,7 @@ main {
 section.left {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 330px;
   height: 450px;
   justify-content: space-evenly;
   padding-left: 150px;
@@ -102,8 +102,16 @@ section.left a {
 section.right {
   display: flex;
   flex-direction: column;
-  width: 800px;
-  height: 450px;
-  background-color: powderblue;
-  margin-top: 100px;
+  width: 1000px;
+  height: 1000px;
+  background-color: rgba(255, 255, 255, 0.637);
+  margin-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0px;
+}
+
+section.right p{
+  font-size: medium;
+
 }
